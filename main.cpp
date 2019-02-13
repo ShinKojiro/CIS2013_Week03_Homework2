@@ -3,15 +3,16 @@
 
 using namespace std;
 
+//needed internet :(
 int main(){
-    for(int i = 0; i < 100; i++){
-        for(int k = 2; k * k <= i; k++){
-            if(i % k == 0){
+    for (int i = 3; i<100; i++){
+        for (int k = 2; k <= i; k++){
+            if (i % k == 0){
                 break;
-            }
-            if(k + 1 > sqrt(i)){
+            }    
+            else if (i == k + 1){
                 cout << i << endl;
-            }
-        }
+            }      
+        }  
     }
 }
